@@ -1,6 +1,6 @@
 alert("Hello World!");
-
-let numeroSecreto = parseInt(Math.random() * 100 + 1);
+let numeroMaximo= 1000
+let numeroSecreto = parseInt(Math.random() * numeroMaximo + 1);
 // let chute = prompt("Digite um número entre 1 e 50: ");
 
 // if (chute == numeroSecreto) {
@@ -16,7 +16,7 @@ let numeroSecreto = parseInt(Math.random() * 100 + 1);
 let chute;
 let tentativas = 1;
 while (chute != numeroSecreto) {
-    chute = prompt("Digite um número de 1 a 100");
+    chute = prompt(`Digite um número de 1 a ${numeroMaximo}` );
     if (chute == numeroSecreto) {
         break;
     } else {
