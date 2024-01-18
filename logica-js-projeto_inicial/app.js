@@ -1,6 +1,6 @@
 alert("Hello World!");
 
-let numeroSecreto = 4;
+let numeroSecreto = parseInt(Math.random() * 100 + 1);
 // let chute = prompt("Digite um número entre 1 e 50: ");
 
 // if (chute == numeroSecreto) {
@@ -13,16 +13,36 @@ let numeroSecreto = 4;
 
 //while
 
-let chute
+let chute;
+let tentativas = 1;
 while (chute != numeroSecreto) {
-    chute = prompt("Digite um número de 1 a 10")
+    chute = prompt("Digite um número de 1 a 100");
     if (chute == numeroSecreto) {
-        alert(`Parabéns, Você acerto o número secreto ${numeroSecreto}`)
+        break;
     } else {
         if (chute > numeroSecreto) {
-            alert(`O número secreto e menor que ${chute}`)
+            alert(`O número secreto e menor que ${chute}`);
         } else {
-            alert(`O número secreto é maior que ${chute}`)
+            alert(`O número secreto é maior que ${chute}`);
         }
-    }
+        tentativas++
+    };
 };
+
+let palavraTentativa = tentativas > 1 ? "tentativas" : "tentativa";
+alert(`Parabéns, Você acerto o número secreto ${numeroSecreto} com ${tentativas} tentativas`);
+
+
+
+// if (tentativas > 1) {
+//     alert(`Parabéns, Você acerto o número secreto ${numeroSecreto} com ${tentativas} tentativas`);
+// } else {
+//     alert(`Parabéns, Você acerto o número secreto ${numeroSecreto} com ${tentativas} tentativa`);
+// }
+
+//Transformando o modelo simples de if else para o operador ternário ficaria assim:
+let palavraPessoa = quantidadePessoas == 1 ? "pessoa" : "pessoas";
+
+
+
+
