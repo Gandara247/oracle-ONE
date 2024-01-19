@@ -34,6 +34,7 @@ alert(`Parabéns, Você acerto o número secreto ${numeroSecreto} com ${tentativ
 
 
 
+
 // if (tentativas > 1) {
 //     alert(`Parabéns, Você acerto o número secreto ${numeroSecreto} com ${tentativas} tentativas`);
 // } else {
